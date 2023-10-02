@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making a lighting bulb</title>
+</head>
+<style>
+    body{
+        background-color: #8b8989;
+        display: flex; 
+        justify-content: center;
+       
+    }
+    #bulb{
+        height: 300px;
+        width:350px;
+        border: 10px solid black;
+        /* background-color: black; */
+        border-radius: 250px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+
+    }
+    button{
+        margin: 25px;
+        padding:10px;
+        height: 50px;
+        width: 100px;
+       
+        
+    }
+
+</style>
+
+<body>
+    <div id="bulb">
+
+    </div>
+    <button>on/off</button>
+
+    <script>
+        const bulb1 = document.getElementById("bulb");
+        const btn = document.querySelector("button");
+        console.log(bulb1);
+        // bulb1.style.backgroundColor="red";
+        let flag = 0;
+        btn.addEventListener("click",function(clicked){
+            if(flag===0){
+                bulb1.style.backgroundColor="yellow";
+                console.log("clicloed")
+                flag =1;
+            }
+            else{
+                bulb1.style.backgroundColor="transparent";
+                console.log("again clickdf");
+                flag = 0;
+            }
+            
+           
+        })
+        
+    </script>
+    
+</body>
+</html>

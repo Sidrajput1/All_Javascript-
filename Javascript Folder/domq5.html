@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hidden image</title>
+</head>
+<body>
+    <h1></h1>
+    <button onclick="display()" >toogle image</button>
+    <div>
+        <img src="https://cdn.pixabay.com/photo/2018/08/15/07/19/indian-flag-3607410_640.jpg" alt="indian_flag" id="img">
+    </div>
+   
+    
+
+    <script>
+        const btn = document.querySelector("button");
+        const heading = document.querySelector("h1");
+        const image = document.querySelector("#img");
+        heading.innerText="Your image is visible."
+        
+
+        function display(){
+            // if(h1.innerHTML=== "Your image is hidden"){
+            //     h1.innerHTML="Your image is hidden";
+            //     img.style.image = ""
+            // }
+            if(img.style.opacity==0){
+                img.style.opacity=100;
+                heading.innerHTML="Your image is visible."
+            }else{
+                img.style.opacity=0;
+                heading.innerHTML="Your image is hidden";
+            }
+
+        }
+    </script>
+</body>
+</html>

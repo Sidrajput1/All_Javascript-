@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table elements in js</title>
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+            <caption>table of numbers</caption>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>first</th>
+                    <th>last</th>
+                    <th>handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tbody>
+            
+
+        </table>
+    </div>
+
+    <script>
+        let t = document.body.firstElementChild.firstElementChild
+        console.log(t.rows)
+        console.log(t.caption)
+       
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question number 3</title>
+    <style>
+       
+    </style>
+
+</head>
+<body>
+    <h1>Counter</h1>
+    <h1>
+        <span><button onclick="increment()" id="btn1">+</button></span>
+        <span id="counting">0</span>
+        <span><button onclick="decrement()" id="btn2">-</button></span>
+    </h1>
+    
+    
+
+    <script>
+        const btn1 = document.querySelector("#btn1")
+        const btn2 = document.querySelector("#btn2")
+        const counting = document.getElementById("counting")
+        // console.log("innerhtml is:",btn1.innerHTML);
+        // console.log("innertext is:",btn1.innerText);
+        // console.log(counting.innerHTML)
+        // console.log(counting.innerText)
+
+        function increment(){
+            counting.innerHTML = Number(counting.innerHTML)+1;
+            console.log(counting.innerText);
+           
+        }
+        function decrement(){
+            if(Number(counting.innerHTML)>0){
+                counting.innerHTML = Number(counting.innerHTML)-1;
+            }
+            else{
+                alert("Counting is beyound zero");
+            }
+
+            
+        }
+    //    btn1.addEventListener("click",increment());
+    //    btn2.addEventListener("click",decrement());
+
+    </script>
+    
+</body>
+</html>

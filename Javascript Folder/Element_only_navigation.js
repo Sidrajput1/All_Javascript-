@@ -1,0 +1,9 @@
+
+const changedbgred= function(){
+    document.body.firstElementChild.style.background="blue"
+
+}
+
+let b = document.body
+console.log("First child of b is:",b.firstChild)
+console.log("seconf child of b is:",b.firstElementChild)

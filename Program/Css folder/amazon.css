@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.my_class {
+    height: 60px;
+    background-color: black;
+    /* margin:200px; */
+}
+
+#logo {
+    color: #f08804;
+    font-size: 25px;
+}
+#info{
+    margin: 120px;
+}
+#cart{
+    margin: 120px;
+}
+#con{
+    margin: 120px;
+}
+button{
+    background-color:#f08804;
+}
+#content{
+    height:600px;
+}
+.box1{
+    height: 300px;
+    width:200px;
+    background-color: rgba(255, 0, 0,0.5);
+    display: inline-block;
+    margin:50px;
+    /* padding:100px 50px 200px 100px; */
+    border : 2px solid black;
+}
+.box2{
+    height:300px;
+    width:200px;
+    background-color: rgb(0, 128, 0);
+    display: inline-block;
+    margin:100px;
+    border : 2px solid black;
+}
+.box3{
+    height:300px;
+    width:200px;
+    background-color: rgba(0, 0, 255,0.75);
+    display: inline-block;
+    margin:100px;
+    border: 2px solid black;
+} 
+footer{
+    /* height:400px; */
+    background-color: black;
+}
+
+ 

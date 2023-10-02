@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid area</title>
+    <style>
+        /* .grid-container {
+            display: grid;
+            grid-template-areas: "header header header"
+                "sidebar main main"
+                "sidebar footer footer";
+            height: 100vh;
+
+        }
+
+        .top {
+
+            grid-area: header;
+
+            background-color: lightblue;
+
+        }
+
+        .left {
+
+            grid-area: sidebar;
+
+            background-color: lightgreen;
+
+        }
+
+
+        .right {
+
+            grid-area: main;
+
+            background-color: yellow;
+
+        }
+        .bottom {
+
+            grid-area: footer;
+
+            background-color: lightpink;
+
+        }  */
+        .container1 {
+
+            display: grid;
+
+            grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+
+            grid-auto-flow: column;
+
+
+        }
+
+        .container2 {
+
+            display: grid;
+
+            grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+
+            grid-auto-flow: row;
+
+        }
+
+        .container1>div,
+        .container2>div,
+        .container3>div {
+
+            border: 1px solid black;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <div class="grid-container">
+
+        <div class="top">Header</div>
+
+        <div class="left">Sidebar</div>
+
+        <div class="right">Main Content</div>
+
+        <div class="bottom">Footer</div>
+
+    </div> -->
+    <div class="container1">
+
+        <div>1</div>
+
+        <div>2</div>
+
+        <div>3</div>
+
+        <div>4</div>
+
+        <div>5</div>
+
+        <div>6</div>
+
+    </div>
+
+    <hr />
+
+    <div class="container2">
+
+        <div>1</div>
+
+        <div>2</div>
+
+        <div>3</div>
+
+        <div>4</div>
+
+        <div>5</div>
+
+        <div>6</div>
+
+    </div>
+
+
+</body>
+
+</html>

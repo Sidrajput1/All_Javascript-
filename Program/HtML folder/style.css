@@ -1,0 +1,12 @@
+*{
+    background: #585454;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color:red;
+}
+.target{
+    color: aliceblue;
+    background-color: blue;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <button onclick="localstoragelogin()" id="login">Login</button>
+    <button onclick="removedatafromstorage()" id="logout">Logout</button>
+
+    <h1 id="status"></h1>
+
+    <script>
+        const login = document.getElementById("login");
+        const logout = document.getElementById("logout");
+
+       function localstoragelogin(){
+           let key = prompt("Enter username");
+           let value = prompt("Enter id");
+            localStorage.setItem(key,value);
+
+       }
+       function removedatafromstorage(){
+             localStorage.clear();
+       }
+       const heading = document.getElementById("status");
+       const loginStatus = localStorage.getItem("key","value");
+
+       if(loginStatus!="key"&&"value"){
+           heading.innerHTML = "User is logged In";
+
+       }else{
+        heading.innerHTML="User is logout";
+       }
+
+
+
+
+    </script>
+    
+</body>
+</html>

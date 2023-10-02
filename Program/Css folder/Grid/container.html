@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Container</title>
+    <style>
+        .container1 {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+
+        .container2 {
+
+            display: grid;
+
+            grid-template-columns: auto auto auto;
+
+        }
+
+        .container3 {
+
+            display: grid;
+
+            grid-template-columns: 100px 200px 300px
+        }
+
+        .container4{
+            display: grid;
+            grid-template-rows: 100px 200px;
+
+            grid-template-columns: repeat(3,1fr);
+            background-color: burlywood;
+        }
+
+        .container>div {
+
+            border: 1px solid black;
+
+        }
+
+        .heading {
+
+            color: blue;
+
+            font-weight: bold;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="heading">grid-template-columns: repeat(3, 1fr)</div>
+
+    <div class="container container1">
+
+        <div>1</div>
+
+        <div>2</div>
+
+        <div>3</div>
+
+        <div>4</div>
+
+        <div>5</div>
+
+        <div>6</div>
+
+    </div>
+    
+
+    <hr />
+
+
+    <div class="heading">grid-template-columns: auto auto auto</div>
+
+    <div class="container container2">
+
+        <div>each column will automatically size itself to fit its
+            content</div>
+        Full Stack Web Development
+        <div>width depends on the content </div>
+
+        <div>each column will automatically size itself to fit its
+            content</div>
+
+        <div>4</div>
+
+        <div>5</div>
+
+        <div>6</div>
+
+    </div>
+
+    <hr />
+
+
+    <div class="heading">grid-template-columns: 100px 200px 300px</div>
+
+    <div class="container container3">
+
+        <div>1</div>
+
+        <div>2</div>
+
+        <div>3</div>
+
+        <div>4</div>
+
+        <div>5</div>
+
+        <div>6</div>
+
+    </div>
+    <hr>
+    <div class="container container4">
+
+        <div>1</div>
+
+        <div>2</div>
+
+        <div>3</div>
+
+        <div>4</div>
+
+        <div>5</div>
+
+        <div>6</div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

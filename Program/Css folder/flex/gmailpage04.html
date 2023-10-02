@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            max-width: 1200px;
+            width: 100%;
+        }
+        nav{
+            padding: 0px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0px;
+        }
+        hr{
+            border: 1px solid #7e7d7d;
+            margin-top: 0px;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo>img{
+            width: 30px;
+            height: 30px;
+        }
+        .logo>p{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .button-section1{
+            display: flex;
+            gap: 50px;
+        }
+        .button1{
+            border: 0px;
+            font-size: 15px;
+            background-color: transparent;
+            color: #3d3dd8;
+            font-weight: 300;
+        }
+        .button2{
+            padding: 10px 25px;
+            background-color: transparent;
+            color: #3d3dd8;
+            font-weight: 500;
+            border: 0.5px solid black;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .button3{
+            padding: 10px 25px;
+            background-color: #1010ca;
+            color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: 300;        
+        }
+        .main-section{
+            display: flex;
+            justify-content: space-around;
+            /* align-content: space-around; */
+            gap: 100px;
+            /* flex-direction: column; */
+        }
+        .sub-section1{
+            width: 40%;
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center;
+            padding: 0px 30px;
+            position: relative;
+        }
+        .sub-section1>h2{
+            font-size: 50px;
+            margin-bottom: 0px;
+        }
+        .sub-section1>p{
+            margin: 10px 0px;
+        }
+        .button-section2{
+            display: flex;
+            margin-top: 30px;
+            gap: 50px;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: row; */
+            /* align-items: flex-end;  */
+            align-self: flex-end;
+            position: absolute;
+            top: 480px;
+            left: 100px;
+            
+            
+
+        }
+        .sub-section2{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+        }
+        .sub-section2>img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97" alt="logo" >
+                <p>Gmail</p>
+            </div>
+            <div class="button-section1">
+                <button class="button1">For Work</button>
+                <button class="button2">Sign in</button>
+                <button class="button3">Creat an account</button>
+            </div>
+
+        </nav>
+        <hr>
+        <section class="main-section">
+            <section class="sub-section1">
+                <h2>Secure Smart and easy to use Gmail</h2>
+                <p>
+                 Get more done with Gmail. Now integrated with Google Chat, Google
+                  Meet, and more, all in one place.
+                </p>
+            </section>
+
+            <section class="button-section2">
+                <button class="button3">Creat an account</button>
+                <button class="button1">For Work</button>
+            </section>
+            <section class="sub-section2">
+                <img src="https://lh3.googleusercontent.com/A0azUqR4LXtIZAhqh7yPEihFjaPGeTZj0n1fLRWGtPkPlpoYCSu42R_dUp4OQEocrAnLq1r2_JC8pdwhgtQlTYQcMd8sLW1FDmgI9lCB" alt="img">
+            </section>
+
+        </section>
+    </div>
+    
+</body>
+</html>

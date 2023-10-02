@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using attribute selector</title>
+    <style>
+        .text{
+            /* text-decoration-color: blue; */
+            color:aqua;
+        }
+        .target{
+            color:blue;
+        }
+        .no{
+            color:#8545c2;
+        }
+        .age{
+            color:#7fff00;
+        }
+        .Gender{
+            border: 1px solid black;
+            background-color: aquamarine;
+            color:red;
+        }
+        div{
+            /* border: 1px solid black; */
+            background-color: aquamarine;
+            color: blueviolet;
+        }
+        .log{
+            color:#21df60;
+            background-color: #620303ac;
+            border-radius: 20% 20% 20% 20%;
+            /* border-top: 100px;
+            border-bottom: 200px; */
+        }
+
+    </style>
+</head>
+<body>
+    <legend>User details</legend>
+    <form action="#" method="get">
+        <div class="name">
+            <label for="name">Enter name</label>
+            <input class="text" type="name" name="name" placeholder="Enter your name" />
+        </div>
+        <div>
+            <label for="email">Enter your Email</label>
+            <input class="target" type="number" placeholder="Enter your email" required />
+        </div>
+        <div>
+            <label for="number">Contact number</label>
+            <input class="no" type="number" type="number" id="number" required>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input class="age" type="age" id="age" required >
+        </div>
+        <div>
+            <label for="Gender">Gender</label>
+            <select class="Gender" name="Gender" id="Gender">
+                <option value="Gender">Male</option>
+                <option value="Gender">female</option>
+                <option value="Gender">others</option>
+            </select>
+        </div>
+        <div>
+            <label for="slills">Skills</label>
+            <select class="skills" name="skills" id="skills">
+                <option value="skills">HTML</option>
+                <option value="skils">CSS</option>
+                <option value="skills">java Script</option>
+                <option value="skills">Data management</option>
+                <option value="skills">all</option>
+            </select>
+        </div>
+        <div>
+            <input class="log" type="submit" submit>
+        </div>
+
+    </form>
+    
+</body>
+</html>

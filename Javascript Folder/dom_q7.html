@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seraching bar</title>
+</head>
+<body>
+    <input type="text" name="text" id="input_text" placeholder="Search for items">
+
+    <h1>Results</h1>
+    <ul id = "listitems">
+        <li>HTMl </li>
+        <li>CSS </li>
+        <li>Java Script</li>
+        <li>Tailwind Css</li>
+        <li>Github</li>
+        <li>Java</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>ruby</li>
+        <li>python</li>
+        <li>react</li>
+        <li>bootstrap</li>
+        <li>php</li>
+        <li>mongodb</li>
+        <li>node js</li>
+    </ul>
+
+    <script>
+        const input_text = document.getElementById("input_text");
+        console.log(input_text);
+        const itemlist = document.getElementById("listitems").getElementsByTagName("li");
+
+        input_text.addEventListener("input",function(){
+              const filtervalue = input_text.value.toLowerCase();
+             // console.log(filtervalue);
+
+              for(let i = 0;i<itemlist.length;i++){
+                const itemtext = itemlist[i].innerText.toLowerCase();
+                if(itemtext.includes(filtervalue)){
+                    itemlist[i].style.display ="block";
+                }else{
+                    itemlist[i].style.display ="none";
+                }
+              }
+
+        })
+        
+
+
+    </script>
+    
+</body>
+</html>

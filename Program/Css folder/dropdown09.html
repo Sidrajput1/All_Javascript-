@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown menu</title>
+    <style>
+        .dropdown{
+           display: inline-block;
+           /* height:50px;
+           width:500px; */
+           position: relative;
+           top: 10px;
+           left: 10px;
+           
+
+        }
+        span{
+            background-color: orangered;
+            /* height: 30px;
+            width: 200px; */
+            font-style: italic;
+            font-size: 15px;
+            padding: 5px 5px;
+
+        }
+        .navbar{
+            /* display: none; */
+            position: absolute;
+            border: 1px solid #f9f9f9;
+            max-height: 150px;
+            width: 200px;
+            overflow-y: scroll;
+        }
+        .dropdown1:hover{
+            display: block;
+        }
+        .dropdown2{
+            padding: 10px;
+            cursor: pointer;
+
+        }
+        .dropdown2:hover{
+            background-color: #474545;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="dropdown1">
+        <span>Hover to view opton</span>
+    </div>
+    <div class="navbar">
+        <div class="dropdown2">option 1</div>
+        <div class="dropdown2">option 2</div>
+        <div class="dropdown2">option 3</div>
+        <div class="dropdown2">option 4</div>
+        <div class="dropdown2">option 5</div>
+        <div class="dropdown2">option 6</div>
+        <div class="dropdown2">option 7</div>
+        <div class="dropdown2">option 8</div>
+        <div class="dropdown2">option 9</div>
+        <div class="dropdown2">option 10</div>
+
+    </div>
+    
+</body>
+</html>

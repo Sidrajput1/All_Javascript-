@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All types of selector</title>
+</head>
+
+<body>
+    <!-- <h1>
+    <p>Lorem, ipsum.</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, atque.
+    </h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolorum.</p> -->
+
+    <div id="parentdiv">
+        <p>child 1</p>
+    </div>
+
+
+    <script>
+        // let head1 = document.getElementByClassName("head");
+        // let para1 = document.getElementById("para");
+        // head1.style.color = "green"
+        // console.log(head1);
+        // console.log(para1);
+        // for(let i=0;i<para1.length;i++){
+        //     para1[i].style.color = "purple"
+        // }
+       // const child = document.body.firstchild
+       // console.log(child);
+    //    console.log("firstchild",document.body.firstChild)
+    //    let a = document.body.firstChild 
+    //     let b = document.querySelector("#para")
+    //    console.log("parentnode",a.parentNode)
+    //    console.log("parentelement",a.parentElement)
+       //console.log("siblings",a.firstChild.nextSibling)
+    //    a.style.color="blue"
+    //    b.style.color="red"
+
+       const parentDiv = document.getElementById('#parentdiv')
+       const newDiv = document.createElement('div');
+
+       parentDiv.appendChild(newDiv);
+       console.log(newDiv)
+
+
+
+    </script>
+</body>
+</html>

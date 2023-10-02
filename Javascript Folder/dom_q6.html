@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown menu</title>
+</head>
+<body>
+    <div class="container"></div>
+    <!-- <option value=""></option> -->
+
+    <script>
+        const myoptions = ["java","javascript","python","c","c++","ruby","CSS","HTML"];
+
+        const container = document.querySelector(".container");
+
+        const heading = document.createElement("h2");
+
+        heading.innerText ="Which is Your Favourate programming language"
+
+        const span = document.createElement("span");
+        const select = document.createElement("select");
+
+        myoptions.map((data)=>{ 
+                const option = document.createElement("option");
+               // console.log(option)
+                option.innerText= data;
+                option.value = data;
+                select.append(option);
+
+        });
+        container.appendChild(heading);
+        heading.appendChild(span);
+        span.appendChild(select);
+        
+
+
+
+
+    </script>
+
+    
+</body>
+</html>
