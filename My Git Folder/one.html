@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>Syncronus && Asyncronus</h1>
+    <button id="play">Play</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        //  setTimeout( function(){
+        //     console.log("Sidharth")
+        //  },2000)
+
+        // const sayhello = function(){
+        //     console.log("Sidharth");
+        // }
+        // setTimeout(sayhello,2000);  
+
+       // document.querySelector('h1').innerHTML="Syncrnus is one by one code function" , or 
+       const changeText = function(){
+           document.querySelector('h1').innerHTML="Syncrnus is one by one code liner function" 
+       }
+
+        document.querySelector('#play').addEventListener('click',function(){
+            if(document.querySelector('h1').innerHTML==="Syncronus && Asyncronus"){
+                setInterval(changeText,2000)
+            }
+           
+           console.log("Started")
+        })
+
+       
+       //changeText();
+       const changeMe = setInterval(changeText,2000);  
+    //    clearTimeout(changeMe)
+       document.querySelector('#stop').addEventListener('click',function(){
+             if(document.querySelector('h1').innerHTML==='Syncrnus is one by one code liner function'){
+                clearInterval(changeMe);
+             }
+             
+             console.log("Stopped")
+       })
+
+      // clearTimeout(changeText);
+
+
+
+    </script>
+</body>
+</html>
